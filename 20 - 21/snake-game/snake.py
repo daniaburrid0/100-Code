@@ -6,7 +6,7 @@ UP = 90
 DOWN = 270
 LEFT = 180
 RIGHT = 0
-INITIAL_POSITION = (0, 0)
+INITIAL_POSITION: tuple[int, int] = (0, 0)
 INITIAL_SPEED = 20
 SNAKE_COLOR = "white"
 SNAKE_SHAPE = "square"
@@ -62,3 +62,12 @@ class Snake:
     def right(self) -> None:
         """Set the heading to RIGHT."""
         self.set_heading(RIGHT)
+        
+    def start_egain(self) -> None:
+        """Reset the snake to the starting position."""
+        for body_part in self.snake_array:
+            body_part.goto(1000, 1000)
+        self.snake_array.clear()
+        self.__init__(3)
+        self.snake_array[0].goto(self.first_pos)
+        self.snake_array[0].setheading(RIGHT)

@@ -3,14 +3,15 @@ from time import sleep
 from snake import Snake
 from food import Food
 from score_board import ScoreBoard
+from typing import *
 
 # Constants
-SCREEN_WIDTH = 600
-SCREEN_HEIGHT = 600
-SNAKE_COLLISION_DISTANCE = 10
-FOOD_COLLISION_DISTANCE = 15
-WALL_LIMIT = 280
-SLEEP_INTERVAL = 0.2
+SCREEN_WIDTH: int = 600
+SCREEN_HEIGHT: int = 600
+SNAKE_COLLISION_DISTANCE: int = 10
+FOOD_COLLISION_DISTANCE: int = 15
+WALL_LIMIT: int = 280
+SLEEP_INTERVAL: int = 0.2
 
 def setup_screen() -> Screen:
     """Setup and return the turtle screen."""
@@ -54,18 +55,17 @@ def check_collision_with_wall(snake: Snake, score: ScoreBoard) -> bool:
 
 def start_game(snake: Snake, food: Food, screen: Screen) -> None:
     """Main game loop."""
-    game_is_on = True
     score = ScoreBoard()
-    while game_is_on:
+    while True:
         sleep(SLEEP_INTERVAL)
         screen.update()
         snake.move()
-        
+            
         check_collision_with_food(snake, food, score)
         
         if check_collision_with_body(snake, score) or check_collision_with_wall(snake, score):
-            game_is_on = False
-            screen.bye()
+            score.reset_score()
+            snake.start_egain()
 
 def main():
     screen = setup_screen()
