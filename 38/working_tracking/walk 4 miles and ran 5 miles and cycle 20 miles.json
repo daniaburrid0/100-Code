@@ -1,0 +1,52 @@
+{
+    "exercises": [
+        {
+            "tag_id": 100,
+            "user_input": "walk",
+            "duration_min": 80.03,
+            "met": 3.5,
+            "nf_calories": 326.79,
+            "photo": {
+                "highres": "https://d2xdmhkmkbyw75.cloudfront.net/exercise/100_highres.jpg",
+                "thumb": "https://d2xdmhkmkbyw75.cloudfront.net/exercise/100_thumb.jpg",
+                "is_user_uploaded": false
+            },
+            "compendium_code": 17190,
+            "name": "walking",
+            "description": null,
+            "benefits": null
+        },
+        {
+            "tag_id": 5,
+            "user_input": "cycle",
+            "duration_min": 20.13,
+            "met": 10,
+            "nf_calories": 234.85,
+            "photo": {
+                "highres": "https://d2xdmhkmkbyw75.cloudfront.net/exercise/5_highres.jpg",
+                "thumb": "https://d2xdmhkmkbyw75.cloudfront.net/exercise/5_thumb.jpg",
+                "is_user_uploaded": false
+            },
+            "compendium_code": 1040,
+            "name": "road cycling",
+            "description": null,
+            "benefits": null
+        },
+        {
+            "tag_id": 100,
+            "user_input": "walking",
+            "duration_min": 400.04,
+            "met": 3.5,
+            "nf_calories": 1633.5,
+            "photo": {
+                "highres": "https://d2xdmhkmkbyw75.cloudfront.net/exercise/100_highres.jpg",
+                "thumb": "https://d2xdmhkmkbyw75.cloudfront.net/exercise/100_thumb.jpg",
+                "is_user_uploaded": false
+            },
+            "compendium_code": 17190,
+            "name": "walking",
+            "description": null,
+            "benefits": null
+        }
+    ]
+}
