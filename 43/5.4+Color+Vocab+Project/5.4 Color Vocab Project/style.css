@@ -1,0 +1,30 @@
+/* make the class color-tittle font-weight normal */
+.color-title {
+    font-weight: normal;
+}
+
+#red {
+    color: red;
+}
+
+
+#blue {
+    color: blue;
+}
+
+#orange {
+    color: orange;
+}
+
+#yellow {
+    color: yellow;
+}
+
+#green {
+    color: green;
+}
+/* make all the img 200x200 */
+img {
+    width: 200px;
+    height: 200px;
+}
