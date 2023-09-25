@@ -1,0 +1,20 @@
+{
+    "URL_ALQUILERES": "https://inmuebles.mercadolibre.com.ar/departamentos/alquiler-temporario/cordoba/villa-maria/",
+    "URL_FORM": "https://forms.gle/As6gPXBLPrS4hxHF9",
+    "HEADERS": {
+      "User-Agent": "Mozilla/5.0",
+      "Accept-Language": "es-419,es;q=0.9,en-US;q=0.8,en;q=0.7"
+    },
+    "XPATHS": {
+      "DIRECTION_FORM": "//*[@id='mG61Hd']/div[2]/div/div[2]/div[1]/div/div/div[2]/div/div[1]/div[2]/textarea",
+      "PRECIO_FORM": "//*[@id='mG61Hd']/div[2]/div/div[2]/div[2]/div/div/div[2]/div/div[1]/div/div[1]/input",
+      "LINK_FORM": "//*[@id='mG61Hd']/div[2]/div/div[2]/div[3]/div/div/div[2]/div/div[1]/div/div[1]/input",
+      "SUBMIT_FORM": "//*[@id='mG61Hd']/div[2]/div/div[3]/div[1]/div[1]/div"
+    },
+    "CSS_CLASSES": {
+      "CLASS_LOCATION": "ui-search-item__location-label",
+      "CLASS_PRICE": "andes-money-amount__fraction",
+      "CLASS_IMG_WRAPPER": "andes-carousel-snapped__wrapper"
+    }
+  }
+  
