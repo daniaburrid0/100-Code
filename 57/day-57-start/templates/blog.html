@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Bug Blog</title>
+    </head>
+    <body>
+        <!-- make a for to renderize the post dict -->
+        {% for post in posts %}
+            <h1>{{post['title']}}</h1>
+            <p>{{post['text']}}</p>    
+        {% endfor %}
+    </body>
+</html>

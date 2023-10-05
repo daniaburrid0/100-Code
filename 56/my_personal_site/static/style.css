@@ -1,0 +1,81 @@
+/* Global variables for colors */
+:root {
+    --ivory: #f5fbefff;
+    --cambridge-blue: #92ad94ff;
+    --reseda-green: #748b75ff;
+    --rose-ebony: #503d42ff;
+    --yellow-green: #84c318ff;
+  }
+  
+  /* Reset some default browser styles and set global styles */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica', sans-serif;
+  }
+  
+  body {
+    background-color: var(--ivory);
+    padding: 2rem;
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+  
+  /* Create a container to center content */
+  .container {
+    max-width: 800px;
+    margin: auto;
+    padding: 2rem;
+    background-color: var(--ivory);
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);  /* More prominent shadow */
+  }
+  
+  /* Style the header */
+  header {
+    background-color: var(--rose-ebony);
+    color: var(--ivory);
+    text-align: center;
+    padding: 2rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+  }
+  
+  /* Style the sections */
+  section {
+    margin: 1rem 0;
+    padding: 1rem;
+    background-color: var(--reseda-green);
+    border-radius: 8px;
+    color: var(--ivory);
+  }
+  
+  /* Add more color to section headers */
+  section h2 {
+    background-color: var(--yellow-green);
+    color: var(--rose-ebony);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    font-size: 1.5rem;
+  }
+  
+  /* Style the bullet points */
+  section ul {
+    list-style-position: inside;
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Style the footer */
+  footer {
+    background-color: var(--cambridge-blue);
+    color: var(--rose-ebony);
+    text-align: center;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-top: 2rem;
+  }
+  
