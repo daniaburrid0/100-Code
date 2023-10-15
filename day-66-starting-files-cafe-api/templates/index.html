@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cafe API Documentation</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="mt-5 mb-4">Cafe API Documentation</h1>
+
+        <!-- Introduction -->
+        <section id="introduction">
+            <h2 class="mt-4 mb-3">Introduction</h2>
+            <p>This API enables CRUD operations on a cafe database.</p>
+        </section>
+
+        <!-- Base URL -->
+        <section id="base-url">
+            <h2 class="mt-4 mb-3">Base URL</h2>
+            <pre class="bg-light p-3">
+                http://localhost:5000/
+            </pre>
+        </section>
+
+        <!-- Endpoints -->
+        <section id="endpoints">
+            <h2 class="mt-4 mb-3">Endpoints</h2>
+
+            <!-- /random -->
+            <div class="card mb-4">
+                <div class="card-header">
+                    GET /random
+                </div>
+                <div class="card-body">
+                    <p>Returns a random cafe from the database.</p>
+                    <h5 class="mt-3 mb-2">Example Response:</h5>
+                    <pre class="bg-light p-3">
+                        {
+                            "id": 1,
+                            "name": "Cafe XYZ",
+                            "location": "Buenos Aires",
+                            ...
+                        }
+                    </pre>
+                </div>
+            </div>
+
+            <!-- /all -->
+            <div class="card mb-4">
+                <div class="card-header">
+                    GET /all
+                </div>
+                <div class="card-body">
+                    <p>Returns all cafes from the database.</p>
+                    <h5 class="mt-3 mb-2">Example Response:</h5>
+                    <pre class="bg-light p-3">
+                        [
+                            {
+                                "id": 1,
+                                "name": "Cafe A",
+                                ...
+                            },
+                            {
+                                "id": 2,
+                                "name": "Cafe B",
+                                ...
+                            }
+                        ]
+                    </pre>
+                </div>
+            </div>
+
+            <!-- /search -->
+            <div class="card mb-4">
+                <div class="card-header">
+                    GET /search?loc=[location]
+                </div>
+                <div class="card-body">
+                    <p>Returns cafes by a specific location.</p>
+                    <h5 class="mt-3 mb-2">Example Response:</h5>
+                    <pre class="bg-light p-3">
+                        [
+                            {
+                                "id": 1,
+                                "name": "Cafe A",
+                                "location": "Buenos Aires",
+                                ...
+                            }
+                        ]
+                    </pre>
+                </div>
+            </div>
+
+            <!-- /add -->
+            <div class="card mb-4">
+                <div class="card-header">
+                    POST /add
+                </div>
+                <div class="card-body">
+                    <p>Adds a new cafe to the database.</p>
+                    <h5 class="mt-3 mb-2">Example Request Payload:</h5>
+                    <pre class="bg-light p-3">
+                        {
+                            "name": "Cafe C",
+                            "location": "Mendoza",
+                            ...
+                        }
+                    </pre>
+                    <h5 class="mt-3 mb-2">Example Response:</h5>
+                    <pre class="bg-light p-3">
+                        {
+                            "success": "Successfully added the new cafe."
+                        }
+                    </pre>
+                </div>
+            </div>
+
+            <!-- /update-price -->
+            <div class="card mb-4">
+                <div class="card-header">
+                    PATCH /update-price/[cafe_id]?new_price=[new_price]
+                </div>
+                <div class="card-body">
+                    <p>Updates the coffee price of a specific cafe.</p>
+                    <h5 class="mt-3 mb-2">Example Response:</h5>
+                    <pre class="bg-light p-3">
+                        {
+                            "success": "Successfully updated the price."
+                        }
+                    </pre>
+                </div>
+            </div>
+
+            <!-- /report-closed -->
+            <div class="card mb-4">
+                <div class="card-header">
+                    DELETE /report-closed/[cafe_id]?api_key=[api_key]
+                </div>
+                <div class="card-body">
+                    <p>Deletes a cafe based on ID and a valid API key.</p>
+                    <h5 class="mt-3 mb-2">Example Response:</h5>
+                    <pre class="bg-light p-3">
+                        {
+                            "success": "Successfully deleted the cafe."
+                        }
+                    </pre>
+                </div>
+            </div>
+
+        </section>
+    </div>
+
+</body>
+</html>
