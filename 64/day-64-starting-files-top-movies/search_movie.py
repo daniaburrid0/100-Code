@@ -2,7 +2,7 @@ import requests
 import tmdbsimple as tmdb
 
 def get_list_of_movies(title) -> list:
-    tmdb.API_KEY = 'cbafc2bfe7da32bc9413b3b72e8a0396'
+    tmdb.API_KEY = ''
     
     search = tmdb.Search()
     response = search.movie(query=title)
@@ -21,7 +21,7 @@ def get_list_of_movies(title) -> list:
     return movie_list
 
 def finde_movie_by_id(id):
-    tmdb.API_KEY = 'cbafc2bfe7da32bc9413b3b72e8a0396'
+    tmdb.API_KEY = ''
     
     movie = tmdb.Movies(id)
     response = movie.info()
